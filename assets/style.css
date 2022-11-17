@@ -1,5 +1,5 @@
 :root {
-    --light-pink: rgb(255, 197, 214);
+    --light-pink: #ffc6c7;
     --real-light-pink: rgb(252, 252, 252);
     --text:rgb(116, 71, 30);
     --yellow: #fdd782;
@@ -46,6 +46,9 @@ nav {
 }
 
 #subtitle-text {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
     padding: 1%;
     background-color: var(--light-pink);
     position: absolute;
@@ -58,11 +61,11 @@ nav {
 }
 
 .info-head {
-    width: 85px;
+    width: 100px;
     height: auto;
-    text-align: end;
-   padding: 1%;
-   margin-left: 2%;
+    text-align: right;
+   padding-right: 10px;
+   margin: 1%;
    border-right: 6px solid var(--text);
 }
 
@@ -82,10 +85,17 @@ nav {
 }
 
 .navigation >li {
-    margin: 1em;
     background-color: var(--mustard);
 }
 
+.navigation >li>a {
+    margin: 1em;
+    background-color: var(--mustard);
+}
+.navigation >li>a:hover {
+    color: var(--yellow);
+    text-decoration: underline var(--yellow);
+}
 
 #contact {
     display: flex;
@@ -97,10 +107,14 @@ nav {
     margin: 1em;
     align-items: center;
 }
+#contact >li>a:hover {
+    color: var(--yellow);
+    text-decoration: underline var(--yellow);
+}
 
 #work {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .work-pics {
@@ -109,6 +123,18 @@ nav {
     list-style: none;
 }
 
-.work-pics >img {
+.work-pics >a>img {
    height: 100%;
+   border-color: black;
+}
+
+.work-pics img:hover{
+    border: 6px solid;
+    box-shadow: 10px 10px 5px rgb(155, 155, 155);
+}
+
+#main-project {
+    display: flex;
+    width: 600px;
+    justify-content:baseline;
 }
