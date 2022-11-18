@@ -130,6 +130,8 @@ nav {
 .work-pics >a>img {
     height:18.4em;
    border-color: black;
+   max-width: 100%;
+   max-height:100vw;
 }
 
 .work-pics img:hover{
