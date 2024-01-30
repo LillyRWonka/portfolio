@@ -26,6 +26,16 @@ nav {
     background-color: var(--light-pink);
     font-size:3vw;
  }
+ #tagline {
+    position: absolute;
+    margin-right: 15%;
+    margin-left: 19%;
+    margin-top: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--light-pink);
+    font-size: larger; 
+}
 
  #header {
     display: flex;
@@ -75,6 +85,7 @@ nav {
 .info-text {
    flex-wrap: wrap;
    margin: 1em;
+   font-size: large;
 }
 
 
